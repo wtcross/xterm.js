@@ -64,7 +64,7 @@ addons.forEach((addon) => {
     {
       input: path.join(__dirname, `addons/addon-${addon}/out-es6/${addonCamelized}Addon.js`),
       output: {
-        file: `./dist/addons/${addonCamelized}Addon.mjs`,
+        file: `./addons/addon-${addon}/dist/${addonCamelized}Addon.mjs`,
         format: "esm",
         sourcemap: true,
       },

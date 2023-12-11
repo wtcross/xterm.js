@@ -25,5 +25,11 @@
   },
   "peerDependencies": {
     "@xterm/xterm": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/SerializeAddon.mjs",
+      "types": "./typings/addon-serialize.d.ts"
+    }
   }
 }

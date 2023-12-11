@@ -22,5 +22,11 @@
   },
   "peerDependencies": {
     "@xterm/xterm": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/AttachAddon.mjs",
+      "types": "./typings/addon-attach.d.ts"
+    }
   }
 }

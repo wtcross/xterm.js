@@ -25,5 +25,11 @@
   },
   "peerDependencies": {
     "@xterm/xterm": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/UnicodeGraphemesAddon.mjs",
+      "types": "./typings/addon-unicode-graphemes.d.ts"
+    }
   }
 }

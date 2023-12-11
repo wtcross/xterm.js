@@ -22,6 +22,11 @@
   },
   "peerDependencies": {
     "@xterm/xterm": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/WebLinksAddon.mjs",
+      "types": "./typings/addon-web-links.d.ts"
+    }
   }
-
 }

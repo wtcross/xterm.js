@@ -22,5 +22,11 @@
   },
   "peerDependencies": {
     "@xterm/xterm": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/Unicode11Addon.mjs",
+      "types": "./typings/addon-unicode11.d.ts"
+    }
   }
 }

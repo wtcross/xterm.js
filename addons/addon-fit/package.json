@@ -22,5 +22,11 @@
   },
   "peerDependencies": {
     "@xterm/xterm": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/FitAddon.mjs",
+      "types": "./typings/addon-fit.d.ts"
+    }
   }
 }

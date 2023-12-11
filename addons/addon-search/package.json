@@ -21,5 +21,11 @@
   },
   "peerDependencies": {
     "@xterm/xterm": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/SearchAddon.mjs",
+      "types": "./typings/addon-searchh.d.ts"
+    }
   }
 }

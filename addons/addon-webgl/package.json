@@ -24,5 +24,11 @@
   },
   "peerDependencies": {
     "@xterm/xterm": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/WebglAddon.mjs",
+      "types": "./typings/addon-webgl.d.ts"
+    }
   }
 }

@@ -24,5 +24,11 @@
   },
   "peerDependencies": {
     "@xterm/xterm": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/CanvasAddon.mjs",
+      "types": "./typings/addon-canvas.d.ts"
+    }
   }
 }

@@ -27,5 +27,11 @@
   "devDependencies": {
     "sixel": "^0.16.0",
     "xterm-wasm-parts": "^0.1.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/ImageAddon.mjs",
+      "types": "./typings/addon-image.d.ts"
+    }
   }
 }

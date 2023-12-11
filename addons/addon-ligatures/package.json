@@ -43,5 +43,11 @@
   },
   "peerDependencies": {
     "@xterm/xterm": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/LigaturesAddon.mjs",
+      "types": "./typings/addon-ligatures.d.ts"
+    }
   }
 }
