@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2021",
+    "lib": [
+      "dom",
+      "es2015"
+    ],
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "rootDir": ".",
+    "outDir": "../out-es6",
+    "sourceMap": true,
+    "removeComments": true,
+    "strict": true,
+    "types": [
+      "../../../node_modules/@types/mocha"
+    ],
+    "paths": {
+      "@xterm/addon-attach": [
+        "../typings/addon-attach.d.ts"
+      ]
+    }
+  },
+  "include": [
+    "./**/*",
+    "../../../typings/xterm.d.ts"
+  ]
+}

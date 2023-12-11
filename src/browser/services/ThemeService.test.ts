@@ -3,7 +3,7 @@
  * @license MIT
  */
 
-import jsdom = require('jsdom');
+import * as jsdom from 'jsdom';
 import { assert } from 'chai';
 import { ThemeService, DEFAULT_ANSI_COLORS } from 'browser/services/ThemeService';
 import { OptionsService } from 'common/services/OptionsService';

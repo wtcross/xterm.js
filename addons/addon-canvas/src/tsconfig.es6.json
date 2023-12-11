@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2021",
+    "lib": [
+      "dom",
+      "es2021"
+    ],
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "rootDir": ".",
+    "outDir": "../out-es6",
+    "sourceMap": true,
+    "removeComments": true,
+    "baseUrl": ".",
+    "paths": {
+      "common/*": [
+        "../../../src/common/*"
+      ],
+      "browser/*": [
+        "../../../src/browser/*"
+      ],
+      "@xterm/addon-canvas": [
+        "../typings/addon-canvas.d.ts"
+      ]
+    },
+    "strict": true,
+    "downlevelIteration": true,
+    "types": [
+      "../../../node_modules/@types/mocha"
+    ]
+  },
+  "include": [
+    "./**/*",
+    "../../../typings/xterm.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../src/common/tsconfig.es6.json"
+    },
+    {
+      "path": "../../../src/browser/tsconfig.es6.json"
+    }
+  ]
+}

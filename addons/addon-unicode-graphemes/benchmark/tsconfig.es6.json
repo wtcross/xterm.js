@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "es6"],
+    "outDir": "../out-es6-benchmark",
+    "types": ["../../../node_modules/@types/node"],
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "strict": false,
+    "target": "es2015",
+    "module": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "common/*": ["../../../src/common/*"],
+      "browser/*": ["../../../src/browser/*"],
+      "UnicodeGraphemeProvider": ["../src/UnicodeGraphemeProvider"],
+      "@xterm/addon-unicode-graphemes": [
+        "../typings/addon-unicode-graphemes.d.ts"
+      ]
+    }
+  },
+  "include": ["../**/*", "../../../typings/xterm.d.ts"],
+  "exclude": ["../../../**/*test.ts", "../../**/*api.ts"],
+  "references": [
+    { "path": "../../../src/common/tsconfig.es6.json" },
+    { "path": "../../../src/browser/tsconfig.es6.json" }
+  ]
+}

@@ -5,7 +5,7 @@
 
 import * as assert from 'assert';
 import { WidthCache, WidthCacheSettings } from 'browser/renderer/dom/WidthCache';
-import jsdom = require('jsdom');
+import * as jsdom from 'jsdom';
 
 
 export class TestWidthCache extends WidthCache {

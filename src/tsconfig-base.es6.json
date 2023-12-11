@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2015",
+    "rootDir": ".",
+
+    "sourceMap": true,
+    "removeComments": true,
+    "pretty": true,
+
+    "incremental": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": true,
+    "importHelpers": true,
+  }
+}

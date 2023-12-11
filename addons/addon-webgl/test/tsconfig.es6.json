@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2021",
+    "lib": [
+      "es2021",
+    ],
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "rootDir": ".",
+    "outDir": "../out-es6-test",
+    "sourceMap": true,
+    "removeComments": true,
+    "baseUrl": ".",
+    "paths": {
+      "common/*": [
+        "../../../src/common/*"
+      ],
+      "browser/*": [
+        "../../../src/browser/*"
+      ]
+    },
+    "strict": true,
+    "types": [
+      "../../../node_modules/@types/node",
+      "../../../node_modules/@lunapaint/png-codec",
+      "../../../out-test/playwright/TestUtils",
+      "../../../out-test/playwright/SharedRendererTests"
+    ]
+  },
+  "include": [
+    "./**/*",
+    "../../../typings/xterm.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../src/common/tsconfig.es6.json"
+    },
+    {
+      "path": "../../../src/browser/tsconfig.es6.json"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "outDir": "../out-es6",
+    "rootDir": ".",
+    "strict": true,
+    "noUnusedLocals": true,
+    "preserveWatchOutput": true,
+    "types": [
+      "../../../node_modules/@types/mocha"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "browser/*": [ "../../../src/browser/*" ],
+      "common/*": [ "../../../src/common/*" ],
+      "@xterm/addon-image": [ "../typings/addon-image.d.ts" ]
+    }
+  },
+  "include": [
+    "./**/*",
+    "../../../typings/xterm.d.ts"
+  ],
+  "references": [
+    { "path": "../../../src/browser/tsconfig.es6.json" },
+    { "path": "../../../src/common/tsconfig.es6.json" }
+  ]
+}

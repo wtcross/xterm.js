@@ -1,0 +1,9 @@
+{
+  "files": [],
+  "include": [],
+  "references": [
+    { "path": "./src/tsconfig.es6.json" },
+    { "path": "./test/tsconfig.es6.json" },
+    { "path": "./benchmark/tsconfig.es6.json" }
+  ]
+}

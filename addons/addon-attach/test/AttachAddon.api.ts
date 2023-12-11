@@ -3,7 +3,7 @@
  * @license MIT
  */
 
-import WebSocket = require('ws');
+import * as WebSocket from 'ws';
 import { openTerminal, pollFor, launchBrowser } from '../../../out-test/api/TestUtils';
 import { Browser, Page } from '@playwright/test';
 
@@ -30,8 +30,8 @@ describe('AttachAddon', () => {
   it('string', async function(): Promise<any> {
     await openTerminal(page);
     const port = 8080;
-    const server = new WebSocket.Server({ port });
-    server.on('connection', socket => socket.send('foo'));
+    const server = new WebSocket.WebSocketServer({ port });
+    server.on('connection', (socket: WebSocket) => socket.send('foo'));
     await page.evaluate(`window.term.loadAddon(new window.AttachAddon(new WebSocket('ws://localhost:${port}')))`);
     await pollFor(page, `window.term.buffer.active.getLine(0).translateToString(true)`, 'foo');
     server.close();
@@ -40,9 +40,9 @@ describe('AttachAddon', () => {
   it('utf8', async function(): Promise<any> {
     await openTerminal(page);
     const port = 8080;
-    const server = new WebSocket.Server({ port });
+    const server = new WebSocket.WebSocketServer({ port });
     const data = new Uint8Array([102, 111, 111]);
-    server.on('connection', socket => socket.send(data));
+    server.on('connection', (socket: WebSocket) => socket.send(data));
     await page.evaluate(`window.term.loadAddon(new window.AttachAddon(new WebSocket('ws://localhost:${port}')))`);
     await pollFor(page, `window.term.buffer.active.getLine(0).translateToString(true)`, 'foo');
     server.close();
