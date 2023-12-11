@@ -53,4 +53,4 @@ class FitAddon {
 }
 
 export { FitAddon };
-//# sourceMappingURL=FitAddon.js.map
+//# sourceMappingURL=FitAddon.mjs.map

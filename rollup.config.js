@@ -7,7 +7,7 @@ const config = [
   {
     input: path.join(__dirname, "out-es6/browser/public/Terminal.js"),
     output: {
-      file: "./dist/es6/xterm.mjs",
+      file: "./dist/xterm.mjs",
       format: "esm",
       sourcemap: true,
     },
@@ -26,7 +26,7 @@ const config = [
   {
     input: path.join(__dirname, "out-es6/headless/public/Terminal.js"),
     output: {
-      file: "./dist/es6/xterm-headless.mjs",
+      file: "./dist/xterm-headless.mjs",
       format: "esm",
       sourcemap: true,
     },
@@ -64,7 +64,7 @@ addons.forEach((addon) => {
     {
       input: path.join(__dirname, `addons/addon-${addon}/out-es6/${addonCamelized}Addon.js`),
       output: {
-        file: `./dist/es6/addons/${addonCamelized}Addon.js`,
+        file: `./dist/addons/${addonCamelized}Addon.mjs`,
         format: "esm",
         sourcemap: true,
       },

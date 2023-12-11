@@ -531,4 +531,4 @@ class SearchAddon extends Disposable {
 }
 
 export { SearchAddon };
-//# sourceMappingURL=SearchAddon.js.map
+//# sourceMappingURL=SearchAddon.mjs.map

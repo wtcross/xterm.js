@@ -960,4 +960,4 @@ class CanvasAddon extends Disposable {
 }
 
 export { CanvasAddon };
-//# sourceMappingURL=CanvasAddon.js.map
+//# sourceMappingURL=CanvasAddon.mjs.map

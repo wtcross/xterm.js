@@ -1228,4 +1228,4 @@ class WebglAddon extends Disposable {
 }
 
 export { WebglAddon };
-//# sourceMappingURL=WebglAddon.js.map
+//# sourceMappingURL=WebglAddon.mjs.map

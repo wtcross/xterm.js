@@ -460,4 +460,4 @@ class UnicodeGraphemesAddon {
 }
 
 export { UnicodeGraphemesAddon };
-//# sourceMappingURL=UnicodeGraphemesAddon.js.map
+//# sourceMappingURL=UnicodeGraphemesAddon.mjs.map

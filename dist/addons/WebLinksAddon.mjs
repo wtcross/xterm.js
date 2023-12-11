@@ -162,4 +162,4 @@ class WebLinksAddon {
 }
 
 export { WebLinksAddon };
-//# sourceMappingURL=WebLinksAddon.js.map
+//# sourceMappingURL=WebLinksAddon.mjs.map

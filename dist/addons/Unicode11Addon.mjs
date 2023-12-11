@@ -235,4 +235,4 @@ class Unicode11Addon {
 }
 
 export { Unicode11Addon };
-//# sourceMappingURL=Unicode11Addon.js.map
+//# sourceMappingURL=Unicode11Addon.mjs.map

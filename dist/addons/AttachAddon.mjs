@@ -67,4 +67,4 @@ function addSocketListener(socket, type, handler) {
 }
 
 export { AttachAddon };
-//# sourceMappingURL=AttachAddon.js.map
+//# sourceMappingURL=AttachAddon.mjs.map

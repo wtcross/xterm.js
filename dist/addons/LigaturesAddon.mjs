@@ -612,4 +612,4 @@ class LigaturesAddon {
 }
 
 export { LigaturesAddon };
-//# sourceMappingURL=LigaturesAddon.js.map
+//# sourceMappingURL=LigaturesAddon.mjs.map

@@ -559,4 +559,4 @@ class HTMLSerializeHandler extends BaseSerializeHandler {
 }
 
 export { HTMLSerializeHandler, SerializeAddon };
-//# sourceMappingURL=SerializeAddon.js.map
+//# sourceMappingURL=SerializeAddon.mjs.map

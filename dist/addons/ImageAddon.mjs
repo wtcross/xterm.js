@@ -2482,4 +2482,4 @@ class ImageAddon {
 }
 
 export { ImageAddon };
-//# sourceMappingURL=ImageAddon.js.map
+//# sourceMappingURL=ImageAddon.mjs.map
